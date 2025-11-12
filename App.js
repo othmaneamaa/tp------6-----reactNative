@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { View, Text, Image, TextInput, Button, ScrollView, StyleSheet, Alert } from 'react-native';
 
 export default function ProfilStatique() {
-  const [nom, setNom] = useState('Othmane'); // 👈 Tu peux changer ici ton nom
-  const [message, setMessage] = useState('Bienvenue sur ton profil 👋'); // 👈 Ton message personnalisé
+  const [nom, setNom] = useState('Othmane'); 
+  const [message, setMessage] = useState('Bienvenue sur ton profil 👋'); 
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {/* Image personnalisée */}
       <Image
-        source={{ uri: 'https://i.pravatar.cc/150?img=15' }} // 👈 Change ce lien si tu veux une autre image
+        source={{ uri: 'https://i.pravatar.cc/150?img=15' }} 
         style={styles.avatar}
       />
 

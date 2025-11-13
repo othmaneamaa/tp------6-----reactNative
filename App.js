@@ -7,7 +7,7 @@ export default function ProfilStatique() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      {/* Image personnalisée */}
+     
       <Image
         source={{ uri: 'https://i.pravatar.cc/150?img=15' }} 
         style={styles.avatar}
@@ -15,17 +15,17 @@ export default function ProfilStatique() {
 
       <Text style={styles.title}>Profil utilisateur</Text>
 
-      {/* Champ nom activé */}
+      
       <Text style={styles.label}>Nom :</Text>
       <TextInput
         style={styles.input}
         placeholder="Entrez votre nom"
-        editable={true} // 👈 champ activé
+        editable={true} 
         value={nom}
         onChangeText={setNom}
       />
 
-      {/* Message personnalisé */}
+      
       <Text style={styles.label}>Message :</Text>
       <TextInput
         style={styles.input}
@@ -37,7 +37,7 @@ export default function ProfilStatique() {
 
       <Text style={styles.message}>{message}</Text>
 
-      {/* Bouton actif avec alerte */}
+      
       <Button
         title="Afficher une alerte"
         onPress={() => {
